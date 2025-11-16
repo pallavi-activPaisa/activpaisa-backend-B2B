@@ -36,6 +36,26 @@
         <artifactId>spring-boot-starter</artifactId>
     </dependency>
 
+	<!-- JSON Web Token (JJWT) -->
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-api</artifactId>
+    <version>0.11.5</version>
+</dependency>
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-impl</artifactId>
+    <version>0.11.5</version>
+    <scope>runtime</scope>
+</dependency>
+<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt-jackson</artifactId>
+    <version>0.11.5</version>
+    <scope>runtime</scope>
+</dependency>
+
+
     <!-- ✅ Web (if you’re building REST APIs) -->
     <dependency>
         <groupId>org.springframework.boot</groupId>
@@ -62,6 +82,17 @@
     <version>1.18.42</version>
 </dependency>
 
+<dependency>
+    <groupId>org.springframework.security</groupId>
+    <artifactId>spring-security-crypto</artifactId>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>8.0.3.Final</version>
+</dependency>
 
     <!-- ✅ MySQL Connector (runtime driver) -->
     <dependency>
